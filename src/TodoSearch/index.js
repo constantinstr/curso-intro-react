@@ -16,7 +16,7 @@ function TodoSearch() {
   return [
     <input 
     className="TodoSearch"
-    placeholder="Cebolla" 
+    placeholder="Comprar cebollas para mañana" 
     value={searchValue} //asigna el valor de nuestro input igual al de nuestro estado
     onChange={onSearchValueChange}
     />

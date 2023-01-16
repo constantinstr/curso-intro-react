@@ -3,6 +3,9 @@ import { TodoContext } from "../TodoContext";
 import { TodoCounter } from "../TodoCounter";
 import { TodoSearch } from "../TodoSearch";
 import { TodoList } from "../TodoList";
+import { TodosError } from "../TodoError";
+import { TodosLoading } from "../TodosLoading";
+import { EmptyTodos } from "../EmptyTodos";
 import { TodoItem } from "../TodoItem";
 import { TodoForm } from "../TodoForm";
 import { CreateTodoButton } from "../CreateTodoButton";
@@ -25,11 +28,11 @@ setOpenModal, } = React.useContext(TodoContext)
      
           <TodoList>
             {/* Mostramos un mensaje en caso de que ocurra algún error */}
-            {error && <p>Desespérate, hubo un error...</p>}
+            {error && <TodosError error={error}/>}
             {/* Mostramos un mensaje de cargando, cuando la aplicación está cargando lo sdatos */}
-            {loading && <p>Estamos cargando, no desesperes...</p>}
+            {loading && <TodosLoading />}
             {/* Si terminó de cargar y no existen TODOs, se muestra un mensaje para crear el primer TODO */}
-            {!loading && !searchedTodos.length && <p>¡Crea tu primer TODO!</p>}
+            {!loading && !searchedTodos.length && <EmptyTodos />}
             {searchedTodos.map((todo) => (
               <TodoItem
                 key={todo.text}

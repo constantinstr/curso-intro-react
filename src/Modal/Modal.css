@@ -9,4 +9,7 @@
     justify-content: center;
     align-items: center;
     color: white;
+    box-shadow: 5px 9px 0px 1px rgba(0,19,102,1);
+    -webkit-box-shadow: 5px 9px 0px 1px rgba(0,19,102,1);
+    -moz-box-shadow: 5px 9px 0px 1px rgba(0,19,102,1);
   }

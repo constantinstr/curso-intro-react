@@ -29,7 +29,7 @@ function useLocalStorage(itemName, initialValue) {
           // También podemos utilizar la última parte del try/cath (finally) para terminar la carga
           setLoading(false);
         }
-      }, 1000);
+      }, 2000); //tiempo de carga de la animacion simulando solicitud a apirest
     });
     
     const saveItem = (newItem) => {

@@ -1,6 +1,6 @@
 .TodoSearch {
     background: #F9FBFC;
-    border-radius: 2px;
+    border-radius: 10px;
     border: 2px solid #202329;
     margin: 0 24px;
     height: 64px;
@@ -10,7 +10,9 @@
     font-family: 'Roboto';
     font-weight: 400;
     color: #1E1E1F;
-    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+    box-shadow: 5px 9px 0px 1px rgb(0, 10, 53);
+-webkit-box-shadow: 5px 9px 0px 1px rgb(0, 10, 53);
+-moz-box-shadow: 5px 9px 0px 1px rgb(0, 10, 53);
   }
   
   .TodoSearch::placeholder {
